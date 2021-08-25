@@ -26,6 +26,7 @@ const usersSchema = new Schema({
     name: String,
     password: String,
     phone: Number,
+    isAdmin:Boolean,
     address: String,
    
 })/// note lotem
