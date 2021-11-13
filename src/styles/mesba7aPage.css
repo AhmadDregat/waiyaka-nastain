@@ -1,0 +1,61 @@
+.mesba7a-container {
+}
+.mesba7a-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid black;
+  padding: 8px;
+}
+.myButton {
+  background-color: #44c767;
+  border-radius: 14px;
+  border: 1px solid #18ab29;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 16px 31px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
+  margin-top: 30px;
+}
+.myButton:hover {
+  background-color: #5cbf2a;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+.resetBtn {
+  background-color: #f1302a;
+  border-radius: 14px;
+  border: 1px solid #940606;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 16px 31px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #910202;
+  margin-top: 30px;
+  margin-left: 45px;
+}
+.resetBtn:hover {
+  background-color: #5cbf2a;
+}
+.resetBtn:active {
+  position: relative;
+  top: 1px;
+}
+.res_counter {
+  font-size: 70px;
+}
+.images_fo {
+  display: inline-block;
+  width: 100px;
+  margin-top: 70px;
+  margin-right: 10px;
+}

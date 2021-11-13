@@ -1,23 +1,71 @@
-import React from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
-import Home from  './Home'
-import Relations from './Relations'
-import News from './News'
-import BorgerBar from './BorgerBar'
-import Mesbaha from './Mesbaha'
+import { React, useEffect } from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useParams,
+} from "react-router-dom";
+import Home from "./Home";
+import Relations from "./Relations";
+import News from "./News";
+import BorgerBar from "./BorgerBar";
+import Mesbaha from "./Mesbaha";
+import Footer from "./Footer";
 
 function DashBord() {
+  const { component } = useParams();
+  useEffect(() => {
+    console.log(component);
+  }, []);
+
+  function comp() {
+    switch (component) {
+      case "news":
+        return <News />;
+        break;
+      case "Mesbaha":
+        return <Mesbaha />;
+        break;
+      default:
+        return <Home />;
+    }
+    if (component === "news") {
+    } else {
+      return <Home />;
+    }
+  }
+  //ction news() {
+  //   return (
+  //     <>
+  //       <BorgerBar />
+  //       <div className="dash">
+  //         <News />
+  //       </div>
+  //       <Footer />
+  //     </>
+  //   );
+  // }
+  // // function Mesbaha() {}
+  // // function tsabeh() {}
+  // function Home() {
+  //   return (
+  //     <>
+  //       <BorgerBar />
+  //       <div className="dash">
+  //         <Home />
+  //       </div>
+  //       <Footer />
+  //     </>
+  //   );
+  // }
+
   return (
-      <Router>
-          <BorgerBar/> 
-        <div className="dash">
-        <Route exact key="homePage"  path="/homePage" render={() => <Home/>}  />
-        <Route exact key="relations"  path="/relations" render={() => <Relations/>}  />
-        <Route exact key="news"  path="/news" render={() => <News/>}  />
-        <Route exact key="Mesbaha"  path="/Mesbaha" render={() => <Mesbaha/>}  />
-        </div>
-      </Router>
-  )
+    <>
+      <BorgerBar />
+      <div className="dash">{comp()}</div>
+      <Footer />
+    </>
+  );
 }
 
-export default DashBord
+export default DashBord;
