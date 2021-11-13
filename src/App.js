@@ -17,30 +17,11 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route key="login" path="/" element={<Login />} />
-        
-        <Route key="dashBord" path="DashBord" element={<DashBord />}>
-            <Route key="news" path=":component" element={<DashBord />} />
-            
-            {/* <Route key="Mesbaha" path="/:component" element={<Mesbaha />} />
-            <Route
-              key="relations"
-              path="relations/:relation"
-              element={<Relations />}
-            />
-            <Route key="DashBord" path="homepage" element={<Home />} /> */}
+        <Route key="dashBord" path="/" element={<DashBord />}>
+            <Route key="news" path=":component" element={<DashBord />}>
+              <Route key="news" path=":relation" element={<DashBord />}/>
+            </Route>
         </Route>
-
-      
-         
-          
-        {/* <Route key="homePage" path="/homePage" element={<Home />} /> */}
-        {/* <Route
-          key="relations"
-          path="/relations/:relation"
-          element={<Relations />}
-        /> */}
-        {/* <Route key="news" path="/news" element={<News />} /> */}
       </Routes>
     </Router>
   );

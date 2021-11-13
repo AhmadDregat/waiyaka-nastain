@@ -107,7 +107,7 @@ const Login = (props) => {
                 </Form.Group>
               </Form>
             </Card.Text>
-            <Link to="/DashBord">
+            <Link to="/">
               <Button
                 variant="outline-primary"
                 onClick={() => {

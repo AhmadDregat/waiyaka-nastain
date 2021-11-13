@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { React, useEffect } from "react";
 import { Carousel } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import himg1 from "../images/humanrelation/1.jpg";
@@ -21,6 +21,9 @@ import gimg5 from "../images/godrelation/5.jpg";
 import gimg6 from "../images/godrelation/6.jpg";
 export default function Relations(props) {
   const { relation } = useParams();
+  useEffect(()=>{
+    console.log(relation);
+  },[relation])
   function peopleR() {
     let photos = [
       { img: pimg1, desc: "img1" },
