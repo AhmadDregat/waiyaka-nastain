@@ -5,7 +5,6 @@ export default function Post(props) {
 
   return <div className={style.postContainer}>
       <div className={style.postTitle}><h3>{props.post.title}</h3></div>
-         
         <div className={style.postImageContainer}>
             <img className={style.postImage} src={props.post.media[0]}/>
             <div className={style.postDescription}><p>

@@ -8,3 +8,11 @@
 .MuiSvgIcon-root{
   font-size: 32px !important;
 }
+
+.MuiTypography-body1{
+  font-size: 1.7em !important;
+  color: white;
+}
+.MuiList-root > a{
+  text-decoration: none;
+}

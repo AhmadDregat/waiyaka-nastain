@@ -79,6 +79,7 @@ const useStyles = makeStyles((theme) => ({
       duration: theme.transitions.duration.shortest,
     }),
     marginRight: -drawerWidth,
+    
   },
   menuItemText: {
     textAlign: "right",
@@ -120,7 +121,6 @@ function BorgerBar(props) {
             >
               <MenuIcon />
             </IconButton>
-
             <img
               className="logo"
               width="50"
