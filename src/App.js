@@ -8,10 +8,10 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route key="login" path="/" element={<Login />} />
-
-        <Route key="dashBord" path="DashBord" element={<DashBord />}>
-          <Route key="news" path=":component" element={<DashBord />} />
+        <Route key="dashBord" path="/" element={<DashBord />}>
+            <Route key="news" path=":component" element={<DashBord />}>
+              <Route key="news" path=":relation" element={<DashBord />}/>
+            </Route>
         </Route>
       </Routes>
     </Router>

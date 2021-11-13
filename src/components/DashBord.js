@@ -1,44 +1,41 @@
 import { React, useEffect } from "react";
 import {
   BrowserRouter as Router,
-  Route,
-  Routes,
+
   useParams,
 } from "react-router-dom";
 import Home from "./Home";
-import Relations from "./Relations";
 import News from "./News";
 import BorgerBar from "./BorgerBar";
 import Mesbaha from "./Mesbaha";
 import Footer from "./Footer";
+import Login from "./Login";
+import Relations from "./Relations";
 
 function DashBord() {
   const { component } = useParams();
   useEffect(() => {
     console.log(component);
-  }, []);
+  }, [component]);
 
   function comp() {
     switch (component) {
       case "news":
         return <News />;
         break;
+      case "login":
+        return <Login />;
+        break;  
       case "Mesbaha":
         return <Mesbaha />;
         break;
       case "relations":
         return <Relations />;
-        break;
-
+        break;  
       default:
         return <Home />;
     }
-    if (component === "news") {
-    } else {
-      return <Home />;
-    }
   }
-
   return (
     <>
       <BorgerBar />

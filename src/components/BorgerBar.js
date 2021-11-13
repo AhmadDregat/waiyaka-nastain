@@ -152,20 +152,22 @@ function BorgerBar(props) {
           <Divider />
 
           <List>
-            <Link to="/DashBord/news">
+            <Link to="/news">
               <ListItem button>
                 <ListItemText
                   className={classes.menuItemText}
                   primary="اخر الاخبار"
+                  onClick={handleDrawerClose}
                 />
               </ListItem>
             </Link>
 
-            <Link to="/DashBord/homepage">
+            <Link to="/homepage">
               <ListItem button>
                 <ListItemText
                   className={classes.menuItemText}
                   primary="صفحه الرئيسيه"
+                  onClick={handleDrawerClose}
                 />
               </ListItem>
             </Link>
@@ -175,15 +177,17 @@ function BorgerBar(props) {
                 <ListItemText
                   className={classes.menuItemText}
                   primary="تسابيح"
+                  onClick={handleDrawerClose}
                 />
               </ListItem>
             </Link>
 
-            <Link to="/DashBord/Mesbaha">
+            <Link to="/Mesbaha">
               <ListItem button>
                 <ListItemText
                   className={classes.menuItemText}
                   primary="مسبحة"
+                  onClick={handleDrawerClose}
                 />
               </ListItem>
             </Link>
@@ -193,16 +197,26 @@ function BorgerBar(props) {
           <List>
             {["العلاقة مع الله", "العلاقه مع النفس", "العلاقة مع الاخرين"].map(
               (text, index) => (
-                <Link to={{ pathname: `/DashBord/relations/${text}` }}>
+                <Link to={{ pathname: `relations/${text}` }}>
                   <ListItem button key={text}>
                     <ListItemText
                       className={classes.menuItemText}
                       primary={text}
+                      onClick={handleDrawerClose}
                     />
                   </ListItem>
                 </Link>
               )
             )}
+           <Link to="/login">
+              <ListItem button>
+                <ListItemText
+                  className={classes.menuItemText}
+                  primary="تسجيل دخول"
+                  onClick={handleDrawerClose}
+                />
+              </ListItem>
+            </Link> 
           </List>
         </Drawer>
         <main
