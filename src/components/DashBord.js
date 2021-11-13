@@ -1,5 +1,8 @@
 import { React, useEffect } from "react";
-import { BrowserRouter as Router, useParams } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  useParams,
+} from "react-router-dom";
 import Home from "./Home";
 import News from "./News";
 import BorgerBar from "./BorgerBar";

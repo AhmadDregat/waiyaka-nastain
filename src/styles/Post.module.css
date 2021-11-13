@@ -1,0 +1,39 @@
+.postContainer {
+  border: 1px solid #dfe6e9;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.12);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.12);
+}
+.postImage {
+  text-align: right;
+  width: 200px;
+  height: 200px;
+  padding: 2px;
+  border-radius: 6%;
+  margin-bottom: 12px;
+  box-shadow: 5px 5px 15px 5px rgb(0 0 0 / 12%);
+}
+.postTitle {
+  text-align: right;
+  font-family: "ScheherazadeNew Bold";
+}
+.postDescription {
+  text-align: right;
+  display: inline-block;
+  font-family: "ScheherazadeNew Regular";
+  font-size: 26px;
+  margin-top: 16px;
+}
+.postImageContainer {
+  text-align: center;
+  display: inline-block;
+  margin-top: 22px;
+}
+.postDate {
+  text-align: left;
+  font-size: 26px;
+  font-family: "OldStandard Bold";
+}

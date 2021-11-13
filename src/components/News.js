@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Post from "./Post";
+import style from "../styles/LastNews.module.css"
 export default function News() {
   const [news, setnews] = useState([]);
   useEffect(() => {
@@ -11,13 +12,12 @@ export default function News() {
   }, []);
  
   return (
-    <div>
+    <>
       {
         news.map((n,i)=>
           <Post post={n}/>
         )
       }
-  
-    </div>
+    </>
   );
 }
