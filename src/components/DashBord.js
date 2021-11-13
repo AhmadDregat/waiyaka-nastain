@@ -26,6 +26,10 @@ function DashBord() {
       case "Mesbaha":
         return <Mesbaha />;
         break;
+      case "relations":
+        return <Relations />;
+        break;
+
       default:
         return <Home />;
     }
@@ -34,30 +38,6 @@ function DashBord() {
       return <Home />;
     }
   }
-  //ction news() {
-  //   return (
-  //     <>
-  //       <BorgerBar />
-  //       <div className="dash">
-  //         <News />
-  //       </div>
-  //       <Footer />
-  //     </>
-  //   );
-  // }
-  // // function Mesbaha() {}
-  // // function tsabeh() {}
-  // function Home() {
-  //   return (
-  //     <>
-  //       <BorgerBar />
-  //       <div className="dash">
-  //         <Home />
-  //       </div>
-  //       <Footer />
-  //     </>
-  //   );
-  // }
 
   return (
     <>
