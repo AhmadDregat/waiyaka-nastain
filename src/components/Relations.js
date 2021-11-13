@@ -37,7 +37,7 @@ export default function Relations(props) {
     return (
       <div className="CarouselStyle">
         <h2> العلاقه مع الاخرين</h2>
-        <Carousel fade>
+        <Carousel fade interval={null}>
           {photos.map((photo) => {
             return (
               <Carousel.Item>
@@ -47,7 +47,7 @@ export default function Relations(props) {
                   alt="First slide"
                 />
                 <Carousel.Caption>
-                  <h2>{photo.desc}</h2>
+                  {/* <h2>{photo.desc}</h2> */}
                 </Carousel.Caption>
               </Carousel.Item>
             );
@@ -68,7 +68,7 @@ export default function Relations(props) {
     return (
       <div className="CarouselStyle">
         <h2> العلاقه مع الله</h2>
-        <Carousel fade>
+        <Carousel fade interval={null}>
           {photos.map((photo) => {
             return (
               <Carousel.Item>
@@ -78,7 +78,7 @@ export default function Relations(props) {
                   alt="First slide"
                 />
                 <Carousel.Caption>
-                  <h3>{photo.desc}</h3>
+                  {/* <h3>{photo.desc}</h3> */}
                 </Carousel.Caption>
               </Carousel.Item>
             );
@@ -101,7 +101,7 @@ export default function Relations(props) {
       <div className="CarouselStyle">
         <h2> العلاقه مع النفس</h2>
 
-        <Carousel fade>
+        <Carousel fade interval={null}>
           {photos.map((photo) => {
             return (
               <Carousel.Item>

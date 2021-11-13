@@ -1,9 +1,15 @@
 .CarouselStyle {
-  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
+
 h2 {
+  font-family: "ScheherazadeNew Bold";
   text-align: center;
-  margin-top: 45px !important;
+  margin-top: 20px !important;
+  font-size: 45px !important;
 }
 h3 {
   text-align: center;
@@ -12,11 +18,13 @@ h3 {
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
   background-size: cover !important;
-  width: 200px !important;
-  height: 200px !important;
+  width: 100px !important;
+  height: 100px !important;
 }
 .carousel-indicators {
-  margin-right: 150px !important;
+  text-align: center !important;
+  top: 220px !important;
+  margin-right: 20% !important;
 }
 .carousel-indicators [data-bs-target] {
   width: 50px !important;
