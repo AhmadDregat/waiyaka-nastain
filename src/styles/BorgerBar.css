@@ -1,4 +1,10 @@
 .logo {
   position: absolute;
-  left: 0px;
+  left: 17px;
+  background-color: #FFF;
+}
+
+
+.MuiSvgIcon-root{
+  font-size: 32px !important;
 }
