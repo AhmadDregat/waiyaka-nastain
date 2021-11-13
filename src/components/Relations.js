@@ -19,13 +19,13 @@ import gimg3 from "../images/godrelation/3.jpg";
 import gimg4 from "../images/godrelation/4.jpg";
 import gimg5 from "../images/godrelation/5.jpg";
 import gimg6 from "../images/godrelation/6.jpg";
-
+import "../styles/relations.css";
 export default function Relations(props) {
   // const [relation, setRelation] = useState("");
   const { relation } = useParams();
-  useEffect(()=>{
+  useEffect(() => {
     console.log(relation);
-  },[relation])
+  }, [relation]);
   function peopleR() {
     let photos = [
       { img: pimg1, desc: "img1" },
@@ -35,19 +35,19 @@ export default function Relations(props) {
       { img: pimg5, desc: "img5" },
     ];
     return (
-      <div>
+      <div className="CarouselStyle">
         <h2> العلاقه مع الاخرين</h2>
         <Carousel fade>
           {photos.map((photo) => {
             return (
               <Carousel.Item>
                 <img
-                  className="d-block w-50 mx-auto h-50 "
+                  className="d-block w-20 mx-auto h-50 "
                   src={photo.img}
                   alt="First slide"
                 />
                 <Carousel.Caption>
-                  <h3>{photo.desc}</h3>
+                  <h2>{photo.desc}</h2>
                 </Carousel.Caption>
               </Carousel.Item>
             );
@@ -66,7 +66,7 @@ export default function Relations(props) {
       { img: gimg6, desc: "img6" },
     ];
     return (
-      <div>
+      <div className="CarouselStyle">
         <h2> العلاقه مع الله</h2>
         <Carousel fade>
           {photos.map((photo) => {
@@ -98,20 +98,22 @@ export default function Relations(props) {
       { img: himg7, desc: "img7" },
     ];
     return (
-      <div>
+      <div className="CarouselStyle">
         <h2> العلاقه مع النفس</h2>
+
         <Carousel fade>
           {photos.map((photo) => {
             return (
               <Carousel.Item>
                 <img
-                  className="d-block w-50 mx-auto h-50 "
+                  className="d-block w-50 mx-auto h-50  "
                   src={photo.img}
                   alt="First slide"
                 />
-                <Carousel.Caption>
-                  <h3>{photo.desc}</h3>
-                </Carousel.Caption>
+                {/* <h3>{photo.desc}</h3>; */}
+                <br />
+                <br />
+                <br />
               </Carousel.Item>
             );
           })}
@@ -132,3 +134,21 @@ export default function Relations(props) {
       break;
   }
 }
+// <div className="CarouselStyle">
+//   <h2> العلاقه مع النفس</h2>
+
+//   <Carousel fade>
+//     {photos.map((photo) => {
+//       return (
+//         <Carousel.Item>
+//           <img
+//             className="d-block w-50 mx-auto h-50 "
+//             src={photo.img}
+//             alt="First slide"
+//           />
+//           <h3>{photo.desc}</h3>;
+//         </Carousel.Item>
+//       );
+//     })}
+//   </Carousel>
+// </div>

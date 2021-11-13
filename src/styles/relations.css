@@ -1,0 +1,24 @@
+.CarouselStyle {
+  min-height: 100vh;
+}
+h2 {
+  text-align: center;
+  margin-top: 45px !important;
+}
+h3 {
+  text-align: center;
+  margin-top: 20px !important;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-size: cover !important;
+  width: 200px !important;
+  height: 200px !important;
+}
+.carousel-indicators {
+  margin-right: 150px !important;
+}
+.carousel-indicators [data-bs-target] {
+  width: 50px !important;
+  height: 7px !important;
+}

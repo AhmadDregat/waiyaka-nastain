@@ -32,7 +32,6 @@ export default function Home() {
         <br />
         <ReactAudioPlayer src={state.audio} volume controls />
       </div>
-      <hr />
     </div>
   );
 }

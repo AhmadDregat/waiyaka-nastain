@@ -1,11 +1,13 @@
 .footer-contaner {
   background-color: #264653;
   color: white;
- position: absolute;
- width: 100%;
- bottom: 0px;
-
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
 }
 .navbar {
   background-color: #264653;
+}
+.dash {
+  background-color: #ffb703;
 }
